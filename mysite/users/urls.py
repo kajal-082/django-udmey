@@ -7,4 +7,5 @@ urlpatterns = [
    #when ever we include class based view we have to add as_view() method to call it 
    path('login/',auth_views.LoginView.as_view(template_name='users/login.html'),name='login'),
    path('logout/',views.logout_view,name='logout'),
+   path('profile/',views.profile,name='profile'),
 ]
